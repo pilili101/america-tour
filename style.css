@@ -20,7 +20,7 @@ html {
 header,
 footer,
 header ul,
-footer ul{
+footer ul {
     grid-column-start: 1;
     grid-column-end: -1;
     display: grid;
@@ -36,14 +36,14 @@ footer ul{
 
 .header ul li a,
 .header div a,
-.footer ul li a{
+.footer ul li a {
     text-decoration: none;
     color: black;
     text-align: center;
 }
 
 .header ul li,
-.footer ul li{
+.footer ul li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -54,37 +54,82 @@ footer ul{
 
 /* HEADER */
 
-.header ul li{
+.header ul li {
     display: flex;
 }
 
-.header ul li:nth-child(2){
+.header ul li:first-child {
+    justify-content: left;
+}
+
+.header ul li:nth-child(2) {
     grid-column: 5;
 }
 
-.box-logo{
+.box-logo {
     grid-column: span 2;
 }
 
-.img-logo{
+.img-logo {
     margin-right: 10px;
 }
 
-.logo{
-    margin-right: 80px;
+.logo {
+    margin-left: 1rem;
 }
 
 /* FOOTER */
 
-.footer ul li:first-child{
+.footer ul li:first-child {
     grid-column: 2/span 2;
 }
 
-.footer ul li{
+.footer ul li {
     grid-column: span 2;
-}
-
-.footer ul li{
     flex-direction: column;
     font-size: small;
+}
+
+/* MAIN */
+
+main {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+}
+
+.section-cards,
+.section-carousel {
+    display: block;
+    height: 50%;
+}
+
+/* .section-carousel {
+    height: 40%;
+} */
+
+.carousel-item{
+    width: 100%;
+    height: 150px;
+}
+
+
+/* CARDS */
+
+.section-cards ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* height: 60%; */
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    font-size: small;
+    width: 20%;
+    margin: 10px;
 }
