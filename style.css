@@ -15,7 +15,8 @@ html {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 10vh 77.3vh 10vh;
+    grid-template-rows: auto 1fr auto; /* Ajusta automáticamente la altura del header, main y footer */
+    min-height: 100vh;
     gap: 10px;
 }
 
@@ -36,7 +37,9 @@ footer ul {
     align-items: center;
 }
 
-
+header, footer {
+    padding: 10px;
+}
 
 .header ul li a,
 .header div a,
