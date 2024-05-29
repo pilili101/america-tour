@@ -1,0 +1,25 @@
+/* Estilos */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 1px;
+  }
+  
+  .registro-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  }
+  
+  .registro-form h2 {
+    margin-bottom: 20px;
+  }
+
+/* MAIN */
+main {
+  margin-bottom: 50px;
+}
+  
