@@ -41,7 +41,7 @@ footer ul {
 
 header,
 footer {
-    padding: 10px;
+    padding: 5px;
 }
 
 .header ul li a,
@@ -50,10 +50,6 @@ footer {
     text-decoration: none;
     color: black;
     text-align: center;
-}
-
-.header ul li i{
-    margin-right: 8px;
 }
 
 .header ul li,
@@ -67,6 +63,10 @@ footer {
 }
 
 /* HEADER */
+
+.header ul li i {
+    margin-right: 8px;
+}
 
 .header ul li {
     display: flex;
@@ -189,7 +189,7 @@ main {
     transition: transform 0.5 ease;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.1);
 }
 
@@ -211,6 +211,10 @@ main {
     .txt {
         font-size: 0.9rem;
         width: 25%;
+    }
+
+    .img-logo{
+        height: 40px;
     }
 
 }

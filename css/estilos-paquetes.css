@@ -1,13 +1,16 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
+body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
-    background-color: rgb(255, 255, 255);
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -20,14 +23,6 @@ html {
     min-height: 100vh;
     gap: 10px;
     overflow-y: auto;
-}
-
-main {
-    margin: 5px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    width: 100%;
-    display: flex;
 }
 
 /* HEADER Y FOOTER */
@@ -49,7 +44,7 @@ footer ul {
 
 header,
 footer {
-    padding: 10px;
+    padding: 5px;
 }
 
 .header ul li a,
@@ -58,6 +53,10 @@ footer {
     text-decoration: none;
     color: black;
     text-align: center;
+}
+
+.header ul li i {
+    margin-right: 8px;
 }
 
 .header ul li,
@@ -71,10 +70,6 @@ footer {
 }
 
 /* HEADER */
-
-.header ul li i {
-    margin-right: 8px;
-}
 
 .header ul li i {
     margin-right: 8px;
@@ -114,4 +109,67 @@ footer {
     grid-column: span 2;
     flex-direction: column;
     font-size: small;
+}
+
+/* MAIN  */
+
+main {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.container h2 {
+    text-align: center;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.details .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buy-button button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button button:hover {
+    background-color: #0056b3;
 }
