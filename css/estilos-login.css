@@ -15,12 +15,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-group{
+    justify-items: center;
+}
+
 button {
     text-align: center;
 }
 
+form{
+    justify-content: right;
+}
+
 .form-group {
     margin: 20px;
+}
+
+form div {
+justify-content: center;
 }
 
 .wrapper {
@@ -35,12 +47,23 @@ button {
     overflow-y: auto;
 }
 
-main{
+main {
     grid-column-start: 1;
     grid-column-end: -1;
     width: 100%;
     display: flex;
 }
+
+.col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form div a{
+    color: black;
+}
+
 
 /* HEADER Y FOOTER */
 
@@ -126,13 +149,13 @@ footer {
 
 
 @media only screen and (max-width: 480px) {
-  
-    .header ul li:first-child{
+
+    .header ul li:first-child {
         grid-row: 2;
         grid-column: span 3;
     }
 
-    .header ul li:last-child{
+    .header ul li:last-child {
         grid-row: 2;
         grid-column: 7/span 2;
     }
@@ -155,6 +178,6 @@ footer {
         grid-column: 7/span 2;
     }
 
-    
+
 
 }

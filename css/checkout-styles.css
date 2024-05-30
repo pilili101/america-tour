@@ -30,6 +30,10 @@ main {
     display: flex;
 }
 
+.btn{
+    margin: 5px
+}
+
 /* HEADER Y FOOTER */
 
 header,
