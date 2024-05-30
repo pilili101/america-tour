@@ -160,16 +160,54 @@ main {
     margin-top: 20px;
 }
 
-.buy-button button {
+.buy-button a{
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 15px;
+    margin: 5px;
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .buy-button button:hover {
     background-color: #0056b3;
+}
+
+
+@media only screen and (max-width: 480px) {
+  
+    .header ul li:first-child{
+        grid-row: 2;
+        grid-column: span 3;
+    }
+
+    .header ul li:last-child{
+        grid-row: 2;
+        grid-column: 7/span 2;
+    }
+
+    .header ul li:nth-child(2),
+    .header ul li:nth-child(3),
+    .header ul li:nth-child(4) {
+        grid-column: 5/span 2;
+    }
+
+    .footer ul li:first-child {
+        grid-column: 1/span 2;
+    }
+
+    .footer ul li:nth-child(2) {
+        grid-column: 4/span 2;
+    }
+
+    .footer ul li:nth-child(3) {
+        grid-column: 7/span 2;
+    }
+
 }

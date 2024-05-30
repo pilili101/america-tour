@@ -213,8 +213,32 @@ main {
         width: 25%;
     }
 
-    .img-logo{
-        height: 40px;
+    .header ul li:first-child{
+        grid-row: 2;
+        grid-column: span 3;
+    }
+
+    .header ul li:last-child{
+        grid-row: 2;
+        grid-column: 7/span 2;
+    }
+
+    .header ul li:nth-child(2),
+    .header ul li:nth-child(3),
+    .header ul li:nth-child(4) {
+        grid-column: 5/span 2;
+    }
+
+    .footer ul li:first-child {
+        grid-column: 1/span 2;
+    }
+
+    .footer ul li:nth-child(2) {
+        grid-column: 4/span 2;
+    }
+
+    .footer ul li:nth-child(3) {
+        grid-column: 7/span 2;
     }
 
 }
